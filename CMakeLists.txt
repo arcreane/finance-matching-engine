@@ -11,7 +11,7 @@ set(CMAKE_AUTORCC ON) # Active la compilation automatique des fichiers de ressou
 set(CMAKE_AUTOUIC ON) # Active la compilation automatique des fichiers d'interface utilisateur (.ui)
 
 # personnel remplacer par votre Qt
-set(CMAKE_PREFIX_PATH "C:/Qt/6.10.0/mingw_64")
+set(CMAKE_PREFIX_PATH "/Users/elodie/Qt/6.10.0/macos")
 
 find_package(Qt6 COMPONENTS
         Core
