@@ -1,0 +1,11 @@
+# Ignorer les répertoires générés par CLion
+.idea/
+build/
+
+# Ignorer les fichiers temporaires
+*.swp
+*.bak
+
+# Ignorer les fichiers générés par CMake
+CMakeCache.txt
+CMakeFiles/
