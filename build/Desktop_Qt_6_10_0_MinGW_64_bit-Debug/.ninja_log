@@ -14,3 +14,13 @@
 762	4175	7863846210252742	CMakeFiles/MatchingEngine.dir/MatchingEngine_autogen/mocs_compilation.cpp.obj	a7d251da14aa54eb
 766	4168	7863846210287840	CMakeFiles/MatchingEngine.dir/MatchingEngine/src/Main.cpp.obj	e73cce134826afde
 3762	4215	7863858419254314	MatchingEngine.exe	387dda941f385947
+44	767	7863878789977752	MatchingEngine_autogen/timestamp	7809f86ce0606bff
+44	767	7863878789977752	MatchingEngine_autogen/mocs_compilation.cpp	7809f86ce0606bff
+44	767	7863878789977752	C:/finance-matching-engine-main/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/MatchingEngine_autogen/timestamp	7809f86ce0606bff
+44	767	7863878789977752	C:/finance-matching-engine-main/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/MatchingEngine_autogen/mocs_compilation.cpp	7809f86ce0606bff
+777	1523	7863878790964169	CMakeFiles/MatchingEngine.dir/MatchingEngine/src/Order.cpp.obj	bd07fcc34b5be726
+781	2027	7863878791006191	CMakeFiles/MatchingEngine.dir/MatchingEngine/src/OrderBook.cpp.obj	38cf74bc2a90734e
+768	4113	7863878790874181	CMakeFiles/MatchingEngine.dir/MatchingEngine_autogen/mocs_compilation.cpp.obj	a7d251da14aa54eb
+773	4302	7863878790919452	CMakeFiles/MatchingEngine.dir/MatchingEngine/src/Main.cpp.obj	e73cce134826afde
+786	4411	7863878791059361	CMakeFiles/MatchingEngine.dir/MatchingEngine/src/MainWindow.cpp.obj	1ca77af3fef0e8cf
+4411	4837	7863878827304603	MatchingEngine.exe	387dda941f385947

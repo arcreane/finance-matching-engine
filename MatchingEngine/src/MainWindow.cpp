@@ -16,7 +16,6 @@
 #include <QtCharts/QChart>
 #include <QtCharts/QChartView> // Needed for QChartView
 
-// ⭐️ FIX/NEW CODE ⭐️
 // IMPLEMENT THE SLOT (This function refreshes the QComboBox content)
 void MainWindow::handleInstrumentCreated()
 {
@@ -34,7 +33,6 @@ void MainWindow::handleInstrumentCreated()
 
     qDebug() << "Order form instrument list refreshed via handleInstrumentCreated. Total instruments: " << instrumentManager.getInstruments().size();
 }
-// ⭐️ END FIX/NEW CODE ⭐️
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
@@ -179,10 +177,8 @@ QWidget *MainWindow::createOrderCreationPanel()
     formLayout->addRow(new QLabel("Account:"), accountEdit);
 
     // Symbol
-    // ⭐️ FIX/NEW CODE ⭐️
     // 1. Assign the newly created QComboBox to the member pointer `symbolCombo`
     symbolCombo = new QComboBox();
-    // ⭐️ END FIX/NEW CODE ⭐️
 
     symbolCombo->setObjectName("symbolCombo");
     for (const auto& instr : instrumentManager.getInstruments())
@@ -309,13 +305,11 @@ QWidget *MainWindow::createInstrumentFormPanel() {
     CreateInstrumentWidget *instrumentForm =
         new CreateInstrumentWidget(&instrumentManager, this);
 
-    // ⭐️ FIX/NEW CODE ⭐️
     // 3. Connect the signal from the Instrument widget to the MainWindow slot
     // Assuming CreateInstrumentWidget emits: void instrumentCreated(int idinstrument);
     // and MainWindow slot is: void handleInstrumentCreated();
     connect(instrumentForm, &CreateInstrumentWidget::instrumentCreated,
             this, &MainWindow::handleInstrumentCreated);
-    // ⭐️ END FIX/NEW CODE ⭐️
 
     QGroupBox *groupBox = new QGroupBox("Create new Instrument");
     QVBoxLayout *layout = new QVBoxLayout(groupBox);

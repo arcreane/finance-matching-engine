@@ -173,7 +173,6 @@ bool Order::validatePrice(const Instrument& instrument) const
         return false;
     }
 
-    // ⭐️ CRITICAL FIX: Use rounding for robust floating-point precision check ⭐️
     // 1. Calculate the factor (e.g., 100 for 2 decimals)
     double precisionFactor = std::pow(10, instrument.pricedecimal);
 
@@ -194,7 +193,6 @@ bool Order::validatePrice(const Instrument& instrument) const
         // std::cout << "DEBUG: Multiplied: " << multipliedPrice << ", Rounded: " << roundedPrice << ", Difference: " << std::fabs(multipliedPrice - roundedPrice) << "\n";
         return false;
     }
-    // ⭐️ END CRITICAL FIX ⭐️
 
     return true;
 }
